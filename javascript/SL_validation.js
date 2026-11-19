@@ -31,6 +31,7 @@ form.addEventListener("submit", function (event) {
 
     // Success
     if (valid) {
+        window.location.href = "student-dashboard.html";
         let message = "Input validation successful!";
 
         form.reset();
