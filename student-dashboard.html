@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Dashboard | UniCare</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/student_reg.css">
+</head>
+<body>
+    <section class="auth-section">
+        <div class="auth-card">
+            <h1>Student Dashboard</h1>
+
+            <form onsubmit="return submitComplaint()">
+                <div class="form-group">
+                    <label for="complaint">Describe your facility complaint</label>
+                    <input id="complaint" type="text" required>
+                </div>
+                <button class="auth-btn" type="submit">Submit Complaint</button>
+                <p id="message"></p>
+            </form>
+
+            <h2>My Complaints</h2>
+            <p>Complaints stay here until you reload or leave this page.</p>
+            <ul id="complaints"></ul>
+
+            <p><a href="student-login.html">Log out</a></p>
+        </div>
+    </section>
+
+    <script>
+        let complaintNumber = 0;
+
+        function submitComplaint() {
+            let input = document.getElementById("complaint");
+
+            if (input.value.trim() === "") {
+                document.getElementById("message").innerHTML =
+                    "Please describe the problem.";
+                return false;
+            }
+
+            complaintNumber++;
+
+            let item = document.createElement("li");
+            item.textContent = "Complaint " + complaintNumber +
+                " — " + input.value + " — Status: Submitted";
+
+            document.getElementById("complaints").appendChild(item);
+            document.getElementById("message").innerHTML =
+                "Complaint submitted.";
+            input.value = "";
+
+            return false;
+        }
+    </script>
+</body>
+</html>
