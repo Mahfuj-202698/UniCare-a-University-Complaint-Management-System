@@ -1,25 +1,176 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UniCare - Faculty Login</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UniCare - University Complaint Management System</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="CSS/style.css">
+
 </head>
-<body class="auth">
-  <div class="box">
-    <h2>🛡️ UniCare</h2>
-    <p style="text-align:center">Faculty Member Login</p>
-    <form onsubmit="return validateLogin()">
-      <label>Email</label>
-      <input type="text" id="email">
-      <label>Password</label>
-      <input type="password" id="password">
-      <p class="error" id="msg"></p>
-      <button type="submit" style="width:100%">Login</button>
-    </form>
-    <p><a href="reset-password.html">Forgot password?</a> | <a href="register.html">Register</a></p>
-  </div>
-  <script src="script.js"></script>
+
+<body>
+
+    <!-- Navbar Section -->
+    <header class="navbar">
+
+        <div class="logo">
+    <img src="assets/Images/aiub-logo.png"
+         alt="UniCare Logo">
+    <span>UniCare</span>
+</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        
+<div class="nav-buttons">
+
+    <!-- Login Dropdown -->
+    <div class="dropdown">
+        <button class="login-btn">Login ▾</button>
+
+        <div class="dropdown-content">
+            <a href="student-login.html">Student Login</a>
+            <a href="faculty-login.html">Faculty Login</a>
+            <a href="officer-login.html">Complaint Officer Login</a>
+            <a href="admin-login.html">Admin Login</a>
+        </div>
+    </div>
+
+    <!-- Registration Dropdown -->
+    <div class="dropdown">
+        <button class="register-btn">Register ▾</button>
+
+        <div class="dropdown-content">
+            <a href="student-register.html">Student Registration</a>
+            <a href="faculty-register.html">Faculty Registration</a>
+        </div>
+    </div>
+
+</div>
+
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                University Complaint
+                Management System
+            </h1>
+
+            <p>
+                Report issues, track progress, and make
+                your university a better place.
+            </p>
+
+            <a href="login.html" class="submit-btn">
+                Submit a Complaint →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- User Roles Section -->
+    <section class="roles">
+
+        <div class="role-card">
+
+            <h2>👨‍🎓</h2>
+
+            <h3>For Students</h3>
+
+            <p>
+                Report and track complaints.
+            </p>
+
+        </div>
+
+
+        <div class="role-card">
+
+            <h2>👨‍🏫</h2>
+
+            <h3>For Faculty</h3>
+
+            <p>
+                View and update complaints.
+            </p>
+
+        </div>
+
+
+        <div class="role-card">
+
+            <h2>👨‍💼</h2>
+
+            <h3>For Officers</h3>
+
+            <p>
+                Manage and resolve issues.
+            </p>
+
+        </div>
+
+
+        <div class="role-card">
+
+            <h2>⚙️</h2>
+
+            <h3>For Admins</h3>
+
+            <p>
+                Monitor and manage the system.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About UniCare</h2>
+
+        <p>
+            UniCare is a University Complaint Management
+            System that helps students and university
+            staff report, manage, and resolve complaints
+            efficiently.
+        </p>
+
+    </section>
+
+<!-- Footer Section -->
+    <footer id="contact">
+
+        <p>
+            © 2026 UniCare. All Rights Reserved.
+        </p>
+
+        <p>
+            University Complaint Management System
+        </p>
+
+    </footer>
+
+
+   
 </body>
+
 </html>

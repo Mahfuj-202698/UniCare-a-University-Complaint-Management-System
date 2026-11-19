@@ -1,0 +1,33 @@
+/* Extra styles for Complaint Officer and Admin login pages.
+   Layout/inputs come from student_login.css */
+
+.role-badge {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 15px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    background: #e7f2ff;
+    color: #0756a8;
+}
+
+.role-badge.admin {
+    background: #fff1e0;
+    color: #a85a07;
+}
+
+.notice {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 13px;
+    color: #555;
+    background: #f4f7fb;
+    border-left: 4px solid #1769aa;
+    border-radius: 4px;
+}
+
+#formMessage.error {
+    color: red;
+}

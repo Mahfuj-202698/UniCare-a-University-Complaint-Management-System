@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Complaint Officer Login | UniCare</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/student_login.css">
+    <link rel="stylesheet" href="CSS/staff_login.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/Images/aiub-logo.png" alt="UniCare Logo">
+            <span>UniCare</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="officer-login.html">Complaint Officer Login</a>
+        </nav>
+    </header>
+
+    <section class="auth-section">
+        <div class="auth-card">
+
+            <span class="role-badge ">Authorized Staff Only</span>
+
+            <h1>Complaint Officer Login</h1>
+            <p>Sign in to access your Complaint Officer dashboard</p>
+
+            <form id="loginForm" novalidate>
+
+                <div class="form-group">
+                    <label for="userId">Officer ID</label>
+                    <input type="text" id="userId" placeholder="e.g. OFF-001" autocomplete="username">
+                    <small id="userIdError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password">
+                    <small id="passwordError"></small>
+                </div>
+
+                <button type="submit" class="auth-btn">Login</button>
+
+                <p id="formMessage"></p>
+            </form>
+
+            <p class="notice">There is no public registration for officers. Your account is created by the System Administrator. Contact the Admin if you need access.<br><br><b>Demo login:</b> OFF-001 / Officer@123</p>
+
+            <p class="back-link"><a href="index.html">Back to Home</a></p>
+        </div>
+    </section>
+
+    <script src="javascript/auth_data.js"></script>
+    <script src="javascript/OL_validation.js"></script>
+</body>
+
+</html>
