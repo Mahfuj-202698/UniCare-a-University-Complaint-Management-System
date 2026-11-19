@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration | UniCare</title>
+
+    <!-- Home Page CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Registration Page CSS -->
+    <link rel="stylesheet" href="CSS/student_reg.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+    <img src="assets/images/aiub-logo.png"
+         alt="UniCare Logo">
+    <span>UniCare</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="student-register.html">Student Registration</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Registration Section -->
+    <section class="auth-section">
+
+        <div class="auth-card">
+
+            <h1>Student Registration</h1>
+
+            <p>Create your UniCare student account</p>
+
+
+            <form id="registerForm" novalidate>
+
+                <!-- Full Name -->
+                <div class="form-group">
+
+                    <label for="fullname">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder="Enter your full name"
+                    >
+
+                    <small id="fullnameError"></small>
+
+                </div>
+
+
+                <!-- Student ID -->
+                <div class="form-group">
+
+                    <label for="studentId">Student ID</label>
+
+                    <input
+                        type="text"
+                        id="studentId"
+                        placeholder="Enter your student ID"
+                    >
+
+                    <small id="studentIdError"></small>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">University Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address"
+                    >
+
+                    <small id="emailError"></small>
+
+                </div>
+
+
+                <!-- Department -->
+                <div class="form-group">
+
+                    <label for="department">Department</label>
+
+                    <select id="department">
+
+                        <option value="">Select Department</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="CNCS">Computer network and Cyber security</option>
+                        <option value="EEE">Electrical and Electronic Engineering</option>
+                        <option value="BBA">Business Administration</option>
+                        <option value="ENGLISH">English</option>
+                        
+
+                    </select>
+
+                    <small id="departmentError"></small>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                    >
+
+                    <small id="passwordError"></small>
+
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                    >
+
+                    <small id="confirmPasswordError"></small>
+
+                </div>
+
+
+                <!-- Submit Button -->
+                <button type="submit" class="auth-btn">
+                    Create Account
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+
+            <p class="login-link">
+                Already have an account?
+                <a href="student-login.html">Login</a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="javascript/Sr_validation.js"></script>
+
+</body>
+
+</html>
