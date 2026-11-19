@@ -1,0 +1,136 @@
+
+/* Registration Section */
+
+.auth-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #f4f7fb;
+}
+
+
+/* Registration Card */
+
+.auth-card {
+    width: 100%;
+    max-width: 480px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.auth-card h1 {
+    text-align: center;
+    color: #123456;
+    margin-bottom: 10px;
+}
+
+
+.auth-card > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #1769aa;
+}
+
+
+/* Error Message */
+
+.form-group small {
+    display: block;
+    color: red;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+
+/* Error Border */
+
+.errorBorder {
+    border: 1px solid red !important;
+}
+
+
+/* Success Border */
+
+.successBorder {
+    border: 1px solid green !important;
+}
+
+
+/* Submit Button */
+
+.auth-btn {
+    width: 100%;
+    padding: 13px;
+    background: #123456;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.auth-btn:hover {
+    background: #1769aa;
+}
+
+
+/* Success Message */
+
+#formMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.login-link a {
+    color: #1769aa;
+    text-decoration: none;
+    font-weight: bold;
+}
