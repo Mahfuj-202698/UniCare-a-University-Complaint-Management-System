@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniCare - View Complaints</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidebar">
+  <h2>🛡️ UniCare</h2>
+  <a href="dashboard.html">🏠 Dashboard</a>
+  <a href="complaints.html" class="active">📋 View Complaints</a>
+  <a href="progress.html">📊 Check Progress</a>
+  <a href="profile.html">👤 My Profile</a>
+  <a href="#" onclick="logout()">🚪 Logout</a>
+</div>
+  <div class="main">
+    <h2>View Complaints</h2>
+
+    <div class="card">
+      <div class="filters">
+        <input type="text" id="search" placeholder="Search complaints..." onkeyup="filterComplaints()">
+        <select id="statusFilter" onchange="filterComplaints()">
+          <option>All</option>
+          <option>Pending</option>
+          <option>In Progress</option>
+          <option>Resolved</option>
+        </select>
+      </div>
+      <table id="complaintTable">
+        <thead>
+          <tr><th>ID</th><th>Title</th><th>Facility</th><th>Student</th><th>Status</th><th>Date</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>101</td><td>Projector not working</td><td>Room 5B</td><td>Tanvir Hasan</td><td><span class="badge pending">Pending</span></td><td>18 Nov 2026</td></tr>
+          <tr><td>102</td><td>Lab PCs are very slow</td><td>CSE Lab 3</td><td>Nusrat Jahan</td><td><span class="badge inprogress">In Progress</span></td><td>15 Nov 2026</td></tr>
+          <tr><td>103</td><td>Wi-Fi disconnects</td><td>Building 3, Floor 3</td><td>Sabbir Ahmed</td><td><span class="badge resolved">Resolved</span></td><td>07 Nov 2026</td></tr>
+          <tr><td>104</td><td>Broken chairs</td><td>Room 7A</td><td>Maliha Karim</td><td><span class="badge pending">Pending</span></td><td>17 Nov 2026</td></tr>
+          <tr><td>105</td><td>Smart board touch not working</td><td>Room 6D</td><td>Arif Mahmud</td><td><span class="badge inprogress">In Progress</span></td><td>12 Nov 2026</td></tr>
+          <tr><td>106</td><td>Air conditioner leaking</td><td>Room 2C</td><td>Farzana Islam</td><td><span class="badge resolved">Resolved</span></td><td>01 Nov 2026</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>Provide Update</h3>
+      <form onsubmit="return addUpdate()">
+        <label>Complaint ID</label>
+        <select id="complaintId">
+          <option value="">-- Select --</option>
+          <option>101</option><option>102</option><option>103</option>
+          <option>104</option><option>105</option><option>106</option>
+        </select>
+        <label>Comment / Update</label>
+        <textarea id="comment" rows="3"></textarea>
+        <p id="msg"></p>
+        <button type="submit">Add Update</button>
+      </form>
+      <h4>Your Updates</h4>
+      <ul id="updates"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniCare - Check Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidebar">
+  <h2>🛡️ UniCare</h2>
+  <a href="dashboard.html">🏠 Dashboard</a>
+  <a href="complaints.html">📋 View Complaints</a>
+  <a href="progress.html" class="active">📊 Check Progress</a>
+  <a href="profile.html">👤 My Profile</a>
+  <a href="#" onclick="logout()">🚪 Logout</a>
+</div>
+  <div class="main">
+    <h2>Check Progress</h2>
+    <div class="card">
+      <table>
+        <tr><th>ID</th><th>Title</th><th>Status</th><th>Progress</th></tr>
+        <tr><td>101</td><td>Projector not working</td><td><span class="badge pending">Pending</span></td>
+            <td><div class="bar"><div style="width:10%"></div></div></td></tr>
+        <tr><td>102</td><td>Lab PCs are very slow</td><td><span class="badge inprogress">In Progress</span></td>
+            <td><div class="bar"><div style="width:50%"></div></div></td></tr>
+        <tr><td>103</td><td>Wi-Fi disconnects</td><td><span class="badge resolved">Resolved</span></td>
+            <td><div class="bar"><div style="width:100%"></div></div></td></tr>
+        <tr><td>104</td><td>Broken chairs</td><td><span class="badge pending">Pending</span></td>
+            <td><div class="bar"><div style="width:10%"></div></div></td></tr>
+        <tr><td>105</td><td>Smart board touch not working</td><td><span class="badge inprogress">In Progress</span></td>
+            <td><div class="bar"><div style="width:50%"></div></div></td></tr>
+        <tr><td>106</td><td>Air conditioner leaking</td><td><span class="badge resolved">Resolved</span></td>
+            <td><div class="bar"><div style="width:100%"></div></div></td></tr>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

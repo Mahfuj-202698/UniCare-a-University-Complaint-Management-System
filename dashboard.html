@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniCare - Faculty Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidebar">
+  <h2>🛡️ UniCare</h2>
+  <a href="dashboard.html" class="active">🏠 Dashboard</a>
+  <a href="complaints.html">📋 View Complaints</a>
+  <a href="progress.html">📊 Check Progress</a>
+  <a href="profile.html">👤 My Profile</a>
+  <a href="#" onclick="logout()">🚪 Logout</a>
+</div>
+  <div class="main">
+    <h2>Faculty Dashboard</h2>
+    <p class="welcome">Welcome, Dr. Demo Faculty (Computer Science)</p>
+
+    <div class="stats">
+      <div class="stat"><div class="icon blue">📄</div><div><h3>6</h3>Total Complaints</div></div>
+      <div class="stat"><div class="icon orange">⏳</div><div><h3>2</h3>Pending</div></div>
+      <div class="stat"><div class="icon purple">🔧</div><div><h3>2</h3>In Progress</div></div>
+      <div class="stat"><div class="icon green">✅</div><div><h3>2</h3>Resolved</div></div>
+    </div>
+    
+    <div class="card">
+      <h3>Latest Complaints</h3>
+      <table>
+        <tr><th>ID</th><th>Title</th><th>Status</th><th>Date</th></tr>
+        <tr><td>101</td><td>Projector not working in Room 5B</td><td><span class="badge pending">Pending</span></td><td>18 Nov 2026</td></tr>
+        <tr><td>102</td><td>Lab PCs are very slow</td><td><span class="badge inprogress">In Progress</span></td><td>15 Nov 2026</td></tr>
+        <tr><td>103</td><td>Wi-Fi disconnects on 3rd floor</td><td><span class="badge resolved">Resolved</span></td><td>07 Nov 2026</td></tr>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

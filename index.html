@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniCare - Faculty Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth">
+  <div class="box">
+    <h2>🛡️ UniCare</h2>
+    <p style="text-align:center">Faculty Member Login</p>
+    <form onsubmit="return validateLogin()">
+      <label>Email</label>
+      <input type="text" id="email">
+      <label>Password</label>
+      <input type="password" id="password">
+      <p class="error" id="msg"></p>
+      <button type="submit" style="width:100%">Login</button>
+    </form>
+    <p><a href="reset-password.html">Forgot password?</a> | <a href="register.html">Register</a></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

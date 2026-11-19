@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniCare - Faculty Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth">
+  <div class="box">
+    <h2>🛡️ UniCare</h2>
+    <p style="text-align:center">Create your Faculty account</p>
+    <form onsubmit="return validateRegister()">
+      <label>Full Name</label>
+      <input type="text" id="name">
+      <label>Email</label>
+      <input type="text" id="email">
+      <label>Department</label>
+      <select id="dept">
+        <option value="">-- Select --</option>
+        <option>Computer Science</option>
+        <option>Electrical &amp; Electronic Engineering</option>
+        <option>Business Administration</option>
+        <option>Library</option>
+        <option>IT Services</option>
+      </select>
+      <label>Password</label>
+      <input type="password" id="password">
+      <label>Confirm Password</label>
+      <input type="password" id="confirm">
+      <p class="error" id="msg"></p>
+      <button type="submit" style="width:100%">Register</button>
+    </form>
+    <p>Already have an account? <a href="index.html">Login</a></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
